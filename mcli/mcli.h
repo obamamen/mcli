@@ -57,6 +57,8 @@
 #define MCLI_UNDERLINE      "\033[4m"
 #define MCLI_REVERSE        "\033[7m"
 
+#define MCLI_ATTR_RESET     "\033[22;24;27m"
+
 
 // ================================================
 // CORE TYPES

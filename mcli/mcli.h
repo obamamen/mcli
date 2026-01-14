@@ -46,84 +46,85 @@
 // COLOR & STYLE CODES
 //
 
-#define MCLI_RESET          "\033[0m"
+#define MCLI_RESET              "\033[0m"
 
-#define MCLI_FG_RED         "\033[31m"
-#define MCLI_FG_GREEN       "\033[32m"
-#define MCLI_FG_YELLOW      "\033[33m"
-#define MCLI_FG_BLUE        "\033[34m"
-#define MCLI_FG_MAGENTA     "\033[35m"
-#define MCLI_FG_CYAN        "\033[36m"
-#define MCLI_FG_WHITE       "\033[37m"
-#define MCLI_FG_DEFAULT     "\033[39m"
+#define MCLI_FG_RED             "\033[31m"
+#define MCLI_FG_GREEN           "\033[32m"
+#define MCLI_FG_YELLOW          "\033[33m"
+#define MCLI_FG_BLUE            "\033[34m"
+#define MCLI_FG_MAGENTA         "\033[35m"
+#define MCLI_FG_CYAN            "\033[36m"
+#define MCLI_FG_WHITE           "\033[37m"
+#define MCLI_FG_DEFAULT         "\033[39m"
 
-#define MCLI_BG_RED         "\033[41m"
-#define MCLI_BG_GREEN       "\033[42m"
-#define MCLI_BG_YELLOW      "\033[43m"
-#define MCLI_BG_BLUE        "\033[44m"
-#define MCLI_BG_DEFAULT     "\033[49m"
+#define MCLI_BG_RED             "\033[41m"
+#define MCLI_BG_GREEN           "\033[42m"
+#define MCLI_BG_YELLOW          "\033[43m"
+#define MCLI_BG_BLUE            "\033[44m"
+#define MCLI_BG_DEFAULT         "\033[49m"
 
-#define MCLI_BOLD           "\033[1m"
-#define MCLI_DIM            "\033[2m"
-#define MCLI_UNDERLINE      "\033[4m"
-#define MCLI_REVERSE        "\033[7m"
+#define MCLI_BOLD               "\033[1m"
+#define MCLI_DIM                "\033[2m"
+#define MCLI_UNDERLINE          "\033[4m"
+#define MCLI_REVERSE            "\033[7m"
 
-#define MCLI_ATTR_RESET     "\033[22;24;27m"
+#define MCLI_ATTR_RESET         "\033[22;24;27m"
 
 
 // ================================================
 // CHARACTER CODES (ASCII)
 //
 
-#define MCLI_CHAR_NONE        0
+#define MCLI_CHAR_NONE          0
 
-#define MCLI_CHAR_NUL         0
-#define MCLI_CHAR_BS          8
-#define MCLI_CHAR_TAB         9
-#define MCLI_CHAR_LF          10
-#define MCLI_CHAR_CR          13
-#define MCLI_CHAR_ESC         27
-#define MCLI_CHAR_DEL         127
+#define MCLI_CHAR_NUL           0
+#define MCLI_CHAR_BEL           7
+#define MCLI_CHAR_BS            8
+#define MCLI_CHAR_TAB           9
+#define MCLI_CHAR_LF            10
+#define MCLI_CHAR_CR            13
+#define MCLI_CHAR_ESC           27
+#define MCLI_CHAR_DEL           127
 
-#define MCLI_ASCII_MIN        0
-#define MCLI_ASCII_MAX        127
+#define MCLI_ASCII_MIN          0
+#define MCLI_ASCII_MAX          127
 
-#define MCLI_ASCII_MIN_PRINT  32
-#define MCLI_ASCII_MAX_PRINT  126
+#define MCLI_ASCII_MIN_PRINT    32
+#define MCLI_ASCII_MAX_PRINT    126
 
 
 // ================================================
 // KEY CODES (NON ASCII)
 //
 
-#define MCLI_KEY_NONE        0
-#define MCLI_KEY_BASE        256
+#define MCLI_KEY_NONE           0
+#define MCLI_KEY_BASE           256
 
-#define MCLI_KEY_UP          (MCLI_KEY_BASE + 1)
-#define MCLI_KEY_DOWN        (MCLI_KEY_BASE + 2)
-#define MCLI_KEY_LEFT        (MCLI_KEY_BASE + 3)
-#define MCLI_KEY_RIGHT       (MCLI_KEY_BASE + 4)
+#define MCLI_KEY_UP             (MCLI_KEY_BASE + 1)
+#define MCLI_KEY_DOWN           (MCLI_KEY_BASE + 2)
+#define MCLI_KEY_LEFT           (MCLI_KEY_BASE + 3)
+#define MCLI_KEY_RIGHT          (MCLI_KEY_BASE + 4)
 
-#define MCLI_KEY_HOME        (MCLI_KEY_BASE + 5)
-#define MCLI_KEY_END         (MCLI_KEY_BASE + 6)
-#define MCLI_KEY_PAGE_UP     (MCLI_KEY_BASE + 7)
-#define MCLI_KEY_PAGE_DOWN   (MCLI_KEY_BASE + 8)
+#define MCLI_KEY_HOME           (MCLI_KEY_BASE + 5)
+#define MCLI_KEY_END            (MCLI_KEY_BASE + 6)
+#define MCLI_KEY_PAGE_UP        (MCLI_KEY_BASE + 7)
+#define MCLI_KEY_PAGE_DOWN      (MCLI_KEY_BASE + 8)
 
-#define MCLI_KEY_INSERT      (MCLI_KEY_BASE + 9)
-#define MCLI_KEY_DELETE      (MCLI_KEY_BASE + 10)
+#define MCLI_KEY_INSERT         (MCLI_KEY_BASE + 9)
+#define MCLI_KEY_DELETE         (MCLI_KEY_BASE + 10)
 
-#define MCLI_KEY_F1          (MCLI_KEY_BASE + 11)
-#define MCLI_KEY_F2          (MCLI_KEY_BASE + 12)
-#define MCLI_KEY_F3          (MCLI_KEY_BASE + 13)
-#define MCLI_KEY_F4          (MCLI_KEY_BASE + 14)
-#define MCLI_KEY_F5          (MCLI_KEY_BASE + 15)
-#define MCLI_KEY_F6          (MCLI_KEY_BASE + 16)
-#define MCLI_KEY_F7          (MCLI_KEY_BASE + 17)
-#define MCLI_KEY_F8          (MCLI_KEY_BASE + 18)
-#define MCLI_KEY_F9          (MCLI_KEY_BASE + 19)
-#define MCLI_KEY_F10         (MCLI_KEY_BASE + 20)
-#define MCLI_KEY_F11         (MCLI_KEY_BASE + 21)
-#define MCLI_KEY_F12         (MCLI_KEY_BASE + 22)
+#define MCLI_KEY_F1             (MCLI_KEY_BASE + 11)
+#define MCLI_KEY_F2             (MCLI_KEY_BASE + 12)
+#define MCLI_KEY_F3             (MCLI_KEY_BASE + 13)
+#define MCLI_KEY_F4             (MCLI_KEY_BASE + 14)
+#define MCLI_KEY_F5             (MCLI_KEY_BASE + 15)
+#define MCLI_KEY_F6             (MCLI_KEY_BASE + 16)
+#define MCLI_KEY_F7             (MCLI_KEY_BASE + 17)
+#define MCLI_KEY_F8             (MCLI_KEY_BASE + 18)
+#define MCLI_KEY_F9             (MCLI_KEY_BASE + 19)
+#define MCLI_KEY_F10            (MCLI_KEY_BASE + 20)
+#define MCLI_KEY_F11            (MCLI_KEY_BASE + 21)
+#define MCLI_KEY_F12            (MCLI_KEY_BASE + 22)
 
 
 // ================================================

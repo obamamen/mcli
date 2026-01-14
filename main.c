@@ -68,6 +68,9 @@ int main(void)
                 line[len++] = (char)key;
                 putchar(key);
                 fflush(stdout);
+            } else
+            {
+                putchar(MCLI_CHAR_BEL);
             }
         }
     }
